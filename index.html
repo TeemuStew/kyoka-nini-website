@@ -2,6 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-22q39KJ6Jf1N7OL2Vf/H16wU3RvsM8fZrd16cQlUuO0='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="お米からつくる、もちもちパン。名古屋・覚王山のグルテンフリー生米パン nini。">
 <style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
@@ -343,6 +345,8 @@ footer .mark{width:120px;margin:0 auto}
   </div>
 </footer>
 
+<!-- Security note: the Content-Security-Policy in the head only allows this exact script, by its sha256 hash.
+     If you edit the script, update that hash or browsers will block the script. -->
 <script>
 (function(){
   var root = document.documentElement;
